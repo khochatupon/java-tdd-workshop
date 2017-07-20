@@ -1,5 +1,9 @@
 public class FizzBuzz {
     public String say(int input) {
-        return Integer.toString(input);
+        if (input <= 2)
+            return Integer.toString(input);
+        else if (input == 3)
+            return "Fizz";
+        return null;
     }
 }
