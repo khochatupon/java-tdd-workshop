@@ -5,8 +5,9 @@ public class MyRange {
     }
 
     public int getLastNumber(String input) {
-
-        return 0;
+        if (isก้ามปูปิด(input))
+            return Character.getNumericValue(input.charAt(3));
+        return Character.getNumericValue(input.charAt(3))-1;
     }
 
     public boolean isก้ามปูปิด(String input) {

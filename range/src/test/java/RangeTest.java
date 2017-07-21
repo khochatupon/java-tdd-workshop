@@ -55,7 +55,7 @@ public class RangeTest {
         assertTrue("ต้องเป็นก้ามปูปิดนะ", actualResult);
     }
 
-    @Test 
+    @Test
     public void
     ตรวจสอบว่าเป็น_วงเล็บปิด() {
         MyRange range = new MyRange();
@@ -63,7 +63,7 @@ public class RangeTest {
         assertFalse("ต้องเป็นวงเล็บปิดนะ", actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     หาตัวเลขสุดท้าย() {
         MyRange range = new MyRange();
