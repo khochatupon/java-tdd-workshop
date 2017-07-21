@@ -17,6 +17,9 @@ public class FormatPhoneNumber {
         String result = "";
         for (int i=0,j=0;i<strNumber.length();i++){
             result += strNumber.charAt(i);
+            if (strNumberLen%3==1 && i==strNumberLen-4){
+                j++;
+            }
             if (j==2 && i!=strNumberLen-1){
                 result += '-';
                 j = -1;
