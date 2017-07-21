@@ -12,8 +12,18 @@ public class FormatPhoneNumber {
     }
 
     public String solution(String input) {
-
-        return null;
+        String strNumber = removeNonDigit(input);
+        int strNumberLen = strNumber.length();
+        String result = "";
+        for (int i=0,j=0;i<strNumber.length();i++){
+            result += strNumber.charAt(i);
+            if (j==2 && i!=strNumberLen-1){
+                result += '-';
+                j = -1;
+            }
+            j++;
+        }
+        return result;
     }
 
 }
